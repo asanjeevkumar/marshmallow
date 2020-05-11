@@ -27,7 +27,7 @@ class BaseModel(pw.Model):
 
 
 class User(BaseModel):
-    email = pw.CharField(max_length=80, unique=True)
+    email = pw.CharField(max_length=80)
     password = pw.CharField()
     joined_on = pw.DateTimeField()
 
